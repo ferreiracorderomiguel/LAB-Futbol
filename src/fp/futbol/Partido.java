@@ -28,7 +28,7 @@ public class Partido implements Comparable<Partido>{
 		this.resultadosParciales = resultadosParciales;
 	}
 	
-	private Boolean comprobarResultadosOrdenados(List<ResultadoParcial> resultadosParciales2) {
+	private Boolean comprobarResultadosOrdenados(List<ResultadoParcial> resultadosParciales) {
 		for (int i = 0; i < resultadosParciales.size() - 1; i++) {
             if (resultadosParciales.get(i).minuto() > resultadosParciales.get(i + 1).minuto()) {
                 return false;
